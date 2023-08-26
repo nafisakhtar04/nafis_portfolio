@@ -10,7 +10,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <!--Start of Tawk.to Script-->
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/64e6506694cf5d49dc6c2032/1h8hqk4ec';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <!--End of Tawk.to Script-->
+
+
+
     <!-- CSS STYLING -->
+
+    <!--<style>
+        .popup {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+        .popup-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888888;
+            width: 30%;
+            font-weight: bolder;
+        }
+        .popup-content button {
+            display: block;
+            margin: 0 auto;
+        }
+        .show {
+            display: block;
+        }
+        h1 {
+            color: green;
+        } -->
 
     <style>
         * {
@@ -19,7 +68,7 @@
         }
 
         body {
-            background-color: rgb(0, 0, 33);
+            background-image: url("bgimg.jpg");
             color: white;
             font-family: 'Poppins', sans-serif;
         }
@@ -27,20 +76,16 @@
         nav {
             position: fixed;
             top: 0;
-            left: 0;width: 100%;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            height:8px;
-            background-color: rgb(18, 18, 62);
+            height: 8px;
+            background: linear-gradient(to right, #0a1459, #5a67bf);
             transition: 0.6s;
             padding: 40px 100px;
             z-index: 100000;
-        }
-
-        nav.sticky{
-            padding: 5px 100px;
-            background: rgb(0, 0, 33);
         }
 
         .left {
@@ -71,14 +116,14 @@
         }
 
         nav ul li a:hover {
-            color: rgb(153, 153, 226);
+            color: #0a1459;
             font-size: 1.01rem;
             transition: 1s;
         }
 
         main hr {
             bottom: 0;
-            background: #9c97f1;
+            color: black;
             height: 1.2px;
             margin: 60px 84px;
         }
@@ -100,51 +145,134 @@
         }
 
         .leftSection {
+            color: black;
+            margin-top: 90px;
+            margin-left: 300px;
             font-size: 3rem;
         }
 
-        .leftSection .buttons {
-            padding: 50px 0;
-        }
 
         .leftSection .btn {
-            padding: 12px;
-            background: #020259;
+            height: 50px;
+            width: 140px;
+            border: 0;
+            padding: 12px 10px;
+            outline: none;
+            color: #fff;
+            background: linear-gradient(to right, #0a1459, #5a67bf);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: width 0.5s;
+        }
+
+        .leftSection .btn img {
+            width: 15px;
+            display: none;
+
+
+        }
+
+        .btn:hover img {
+            display: block;
+        }
+
+        .btn:hover {
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .loginform {
+            width: 350px;
+            padding: 30px 20px;
+            background-color: white;
+            position: absolute;
+            font-size: large;
+            text-align: center;
+            transition: 1s;
+            left: 50%;
+            top: 70%;
+            box-shadow: 0px 0px 10px 3px gray;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        .showloginform {
+            opacity: 1;
+        }
+
+        .loginform input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 45px;
+        }
+
+        .loginform button {
+            background-color: black;
             color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
+            padding: 10px 15px;
             cursor: pointer;
         }
 
+        .loginform span {
+            position: absolute;
+            right: 0px;
+            width: 30px;
+            cursor: pointer;
+            color: white;
+            line-height: 30px;
+            height: 30px;
+            background: darkblue;
+            text-align: center;
+            top: 0px;
+        }
+
+        .rightSection {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
         .rightSection img {
-            width: 80%;
+            margin-top: 50px;
+            width: 100%;
+            transition: 0.2s all ease-in-out;
+        }
+
+        .rightSection:hover img {
+            transform: scale(1.1);
         }
 
         .purple {
-            color: rgb(170, 107, 228);
+            color: rgb(18, 18, 62);
         }
 
-        .text-gray {
-            color: gray;
-        }
 
         #element {
-            color: rgb(170, 107, 228);
+            color: rgb(18, 18, 62);
+        }
+
+
+        .text-gray {
+            color: darkslategray;
         }
 
         .secondSection {
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 130vh;
         }
 
         .secondSection h1 {
+            color: black;
             font-style: 1.9rem;
         }
 
         .secondSection .box {
-            background: white;
+            background: black;
             width: 77vw;
             height: 2px;
             margin: 56px 0;
@@ -154,7 +282,7 @@
         .secondSection .vertical {
             height: 93px;
             width: 1px;
-            background-color: white;
+            background-color: black;
             margin: 0 110px;
         }
 
@@ -166,6 +294,7 @@
         }
 
         .vertical-title {
+            color: black;
             position: relative;
             top: 75px;
             width: 150px;
@@ -178,6 +307,10 @@
             color: gray;
             width: 150px;
             font-size: 9px;
+        }
+
+        iframe {
+            margin-top: 40vh;
         }
 
         footer {
@@ -214,6 +347,27 @@
             color: gray;
             padding: 12px;
         }
+
+        @media only screen and (max-width: 700px) {
+            nav ul {
+                width: 100%;
+                background: rgb(18, 18, 62);
+                position: absolute;
+                top: 75px;
+                right: 0;
+                z-index: 2;
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                color: white;
+            }
+        }
     </style>
 
     <!-- CSS STYLING END -->
@@ -229,8 +383,10 @@
             <div class="left">
                 <div class="logo"></div>
                 <img src="newn.jpg" alt="" width="60px" height="50px">
-                afis's - Developer Portfolio
+                Nafis's - Developer Portfolio
             </div>
+
+
 
             <!-- Navbar lists -->
 
@@ -240,10 +396,29 @@
                     <li><a href="https://www.instagram.com/mr_nafis_07_/">About</a></li>
                     <li><a href="http://127.0.0.1:5500/myrgstrsnform.html">Services</a></li>
                     <li><a href="http://127.0.0.1:5500/project.html">Projects</a></li>
-                    <li><a href="https://www.facebook.com/nafis.akhtar.07">Contact Me</a></li>
+                    <li><a href="https://wa.me/9097220214">Contact Me</a></li>
                 </ul>
             </div>
+
+            <!-- START GOOGLE TRANSLATOR  -->
+
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement(
+                        { pageLanguage: 'en' },
+                        'google_translate_element'
+                    );
+                }
+            </script>
+
+            <script type="text/javascript"
+                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            <!-- GOOGLE TRANSLATOR END -->
         </nav>
+
     </header>
 
 
@@ -254,7 +429,7 @@
 
         <section class="firstSection">
             <script type="text/javascript">
-                window.addEventListener("scroll", function(){
+                window.addEventListener("scroll", function () {
                     var nav = document.querySelector("nav");
                     nav.classList.toggle("sticky", window.scrollY > 0);
                 })
@@ -263,15 +438,35 @@
                 Hi, My name is <span class="purple">Nafis</span>
                 <div>and I am a passionate</div>
                 <span id="element"></span>
+                <br>
 
                 <!-- Applying Buttons -->
 
-                <div class="buttons"><button class="btn btn-success"
-                        onclick="location.href='https://www.youtube.com/channel/UCSRQN1Mau8tqbKrCRA7jm8Q';">See My
-                        Video's</button>
-                    <button class="btn btn-success" onclick="location.href='http://127.0.0.1:5500/project.html';">Visit
-                        Amazon Clone</button>
+                <div class="button">
+                    <button type="button" class="btn btn-success"
+                        onclick="location.href='http://127.0.0.1:5500/project.html'"> Visit
+                        <img src="arrow.png"></button>
                 </div>
+
+                <!-- START LOGIN FORM -->
+
+                <div class="loginform">
+                    <span>&times;</span>
+                    <form action="">
+                        <div>
+                            <label for="">Full Name</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label for="">Email-Id</label>
+                            <input type="text" />
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+
+                <!-- END LOGIN FORM -->
+
             </div>
 
             <!-- Hero Section Image -->
@@ -379,6 +574,16 @@
                         eveniet, dolorem ipsam iusto ad architecto suscipit voluptatibus ullam a, quia commodi,
                         recusandae eos porro! </div>
                 </div>
+
+                <!-- STSRT YOUTUBE VIDEO SECTION -->
+
+                <!-- <iframe width="320" height="560" src="https://www.youtube.com/embed/V-uAi9GOL1k"
+                    title="🔥🔥 | #explore #explorepage #bike #rs200 #ytshorts" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> -->
+
+                <!-- END YOUTUBE VIDEO SECTION -->
+
             </div>
         </section>
     </main>
@@ -432,22 +637,18 @@
 
             <!-- Footer Fourth -->
 
+            <!-- START VISITOR COUNTER -->
+
             <div class="footer-fourth">
-                <ul>
-                    <li>
-                        <p><a href="http://127.0.0.1:5500/portfolio-website/website.html">Home</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://www.instagram.com/mr_nafis_07_/">About</a></p>
-                    </li>
-                    <li>
-                        <p><a href="http://127.0.0.1:5500/myrgstrsnform.html">Services</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://www.facebook.com/nafis.akhtar.07">Contact</a></p>
-                    </li>
-                </ul>
+                <a href='http://www.freevisitorcounters.com'>freevisitorcounters</a>
+                <script type='text/javascript'
+                    src='https://www.freevisitorcounters.com/auth.php?id=dbcd36a25048fda7615171be126010c1fb1ebf9a'></script>
+                <script type="text/javascript"
+                    src="https://freevisitorcounters.com/en/home/counter/1064352/t/0"></script>
             </div>
+
+            <!-- END VISITOR COUNTER -->
+
         </div>
 
         <!-- Footer Rights -->
